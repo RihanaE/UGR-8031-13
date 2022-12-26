@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="contact page of the website">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+</head>
+<body>
+    <header>
+        <img src="/Image/background.jpeg" alt="Background Image- symbol of travelling" width="400" height="300">
+        <a href="about.html"><img src="/Image/Logo.png" alt="Logo of the company" width="35" height="35"></a>
+        <nav>
+            <ul>
+                <li><a href="home.html"><b>HOME</b></a></li>
+                <br>
+                <li><a href="about.html"><b>ABOUT</b></a></li>
+                <br>
+                <li><a href="contact.html"><b>CONTACT</b></a></li>
+                <br>
+                <li><a href="places.html"><b>PLACES</b></a></li>
+                <br>
+                <li><a href="book.html"><b>BOOK</b></a></li>
+                <br>
+                <li><a href="special tours.html"><b>SPECIAL TOURS</b></a></li>
+                <br>
+                <li><a href="collection.html"><b>COLLECTION</b></a></li>
+                <br>
+                <li><img src="Image/search icon.png" alt="search icon"  width="25" height="25"></li>
+            </ul>
+            <h1>CONTACT</h1>
+        </nav>
+
+    </header>
+
+    <hr>
+
+        <form >
+            <fieldset>
+                <legend>Basic Information</legend>
+                <label for="first">First Name</label>
+                <input type="text" id="first" placeholder="John" required>
+                &nbsp;<label for="last">Last Name</label>
+                <input type="text" id="last" placeholder="Cowell" required>
+                <br><br>
+                <label for="mail">E-mail</label>
+                <input type="email" id="mail" placeholder="abc@gmail.com" required>
+                &nbsp;<label for="phone">Phone</label>
+                <input type="tel" id="phone" pattern="[0 - 9]{10}">
+                <br><br>
+                <label for="residence">Place Of Residence</label>
+                <input type="text" id="residence" placeholder="Addis Ababa">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Other</legend>
+                <label for="agree" >Are you a travler? </label><br> <input type="radio" id="agree" name="travel" value="yes">YES <label for="noagree"><input id="noagree" type="radio" name="travel" value="no">NO </label>
+                <br><br>
+                <label for="hear">How do you hear about us?</label>
+                <select name="hearabout" id="hear">
+                    <option value="telegram">Telegram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="whatsapp">Whatsapp</option>
+                    <option value="tiktok">Tiktok</option>
+                    <option value="other">Other</option>
+                </select>
+                &nbsp;<label for="location">Tour Location</label>
+                <input type="text" id="location">
+                <br><br><label for="numberT">Number Of Travlers</label>
+                <input type="number" id="numberT">
+                <br><br>
+                <label for="departe">Departure Date</label>
+                <input type="date" id="departe">
+                &nbsp;<label for="arrive">Arrival Date</label>
+                <input type="date" id="arrive">
+            </fieldset>
+            <br><br>
+            <label for="comment" >Message </label>
+            <br>
+            <textarea name="comment" cols="30" id="comment" rows="10" placeholder="Enter your comment"></textarea>
+            <br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+   
+
+    <hr>
+
+    <footer>
+        <ul>
+            <li><a href="about.html"><img src="/Image/Logo.png" alt="Logo of the company" width="25" height="25"></a></li>
+            <li>FOLLOW US ON</li>
+            <li><a href="https://www.facebook.com/"><img src="/Image/facebook.png" alt="facebook symbol" width="25" height="25"></a></li>
+        
+            <li><a href="https://www.tiktok.com/login"><img src="/Image/tiktok.png" alt="tiktok icon" width="25" height="25"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="/Image/instagram.png" alt="Instagram icon" width="25" height="25"></a></li>
+            <li><a href="https://chat.whatsapp.com/EROCVoIlPyt9yv8zs4Fxsq"><img src="/Image/whatsapp.png" alt="whatsapp icon" width="25" height="25"></a></li>
+
+        </ul>
+        
+        <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html#privacy"> PRIVACY POLICY</a></li>
+            <li><a href="about.html#terms"> TERMS OF SERVICES</a></li>
+        </ul>
+        
+        <ul>
+            <li>
+            <b> CONTACT US</b> <ul>
+
+                    <li><img src="/Image/mail icon.png" alt="mail icon" width="25" height="25"><a href="mailto:sighttourguide@gmail.com"> sightTourGuide@gmail.com</a></li>
+
+                    <li><img src="Image/phone icon.png" alt="phone icon" width="25" height="25"><a href="tel:+251960903751"> xxx-xx-xx-xx-xx</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <p><em>&copy; 2022 Sight Tour, All Right Reserved</em></p>
+    </footer>
+</body>
+</html>
