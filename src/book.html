@@ -3,243 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="collection page of the website">
+    <meta name="description" content="book page of the website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     <title>BOOK</title>
 </head>
 <body>
-    <header>
-        
-        <a href="about.html" class="logo"><img src="images/Logo.png" alt="Logo of the company" width="35" height="35"></a>
-
-        <div class="bx bx-menu" id="menu-icon">
-
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            
-        </div>
-        
-        
-        <nav class="navbar">
-
-        
-            <ul>
-                <li><a href="index.html"><b>HOME</b></a></li>
-                
-                <li><a href="about.html"><b>ABOUT</b></a></li>
-                
-                <li><a href="contact.html"><b>CONTACT</b></a></li>
-                
-                <li><a href="places.html"><b>PLACES</b></a></li>
-                
-                <li><a href="book.html"><b>BOOK</b></a></li>
-                
-                <li style="text-align:center;"><a href="special tours.html"><b>SPECIAL TOURS</b></a></li>
-                
-                <li><a href="collection.html"><b>COLLECTION</b></a></li>
-                
-                <li class="navbar__search"><img src="images/search icon.png" alt="search icon2"  width="35" height="35"></li>
-                
-            </ul>
-            
-        </nav>
-        
-    </header>
-<section class="section__common" id="common">
-
-    <div class="section__common--text">
-        <h1>BOOK</h1>
     
+    
+        <header class="background">
+            <div class="has-bg-img position-relative">
 
 
-        
-</section>
 
 
-    <hr>
+            <nav class="navbar navbar-expand-lg menu navbar-dark nav background-lg">
 
-    <div class="book">
+                <div class="container">
+                    <a class="navbar-brand" href="about.html"><img src="images/Logo.png" alt="Logo of the company" width="35" height="35">
+                    
+                </a>
 
-        <div class="book--textapperance">
+                    <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
 
-            <p>If you want more information you can leave us a message in our contact page.</p>
-            <p>WE WILL ALWAYS BE THERE TO ANSWER YOUR QUESTION</p>
-
-            <ul>
-                <li>CONTACT US 
-                    <ul>
-                        <li><img src="/images/mail icon.png" alt="mail icon" width="25" height="25"><a href="mailto:sighttourguide@gmail.com"> sightTourGuide@gmail.com</a></li>
-
-                        <li><img src="images/phone icon.png" alt="phone icon" width="25" height="25"><a href="tel:+251960903751"> xxx-xx-xx-xx-xx</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-        </div>
-
-        <div class="form">
-
-            <form action="/" method="GET">
-
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 
-                <fieldset>
-                    <legend>PERSONAL INFORMATION</legend>
+                
+                </div>
 
-                    
-                    <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname" placeholder="John Smith Cowell">
-                    
-                    <br><br>
-                    <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" placeholder="0956783456">
-                    <br><br>
-
-                    <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="abc@gmail.com">
-                    
-                        <br><br>
-                    <label for="residence">Place Of Residence</label>
-                    <select id="residence" name="residence" >
-                        <option value="addis ababa">Addis Ababa</option>
-                        <option value="jimma">Jimma</option>
-                        <option value="dire dawa">Dire dawa</option>
-                        <option value="london">London</option>
-                        <option value="bejing">Bejing</option>
-                        <option value="hawassa">Hawassa</option>
-                    </select>
-                    <br><br>
-
-                    <label for="Tour">Tour Of Interest</label>
-                    <select id="Tour" name="TourOfInterest" >
-                        <option value="london">London</option>
-                        <option value="bejing">Bejing</option>
-                        <option value="harar">Harar</option>
-                        <option value="dire dawa">Dire dawa</option>
-                        <option value="india">India</option>
-                    </select>
-
-                </fieldset>
-
-                <br><br>
-
-                <fieldset>
-                    <legend>IMPORTANT INFORMATION</legend>
-                    <label for="departure">Departure Time</label>
-                    <input id="departure" type="datetime-local" name="time_date" placeholder="Departure Time">
-
-                    <br><br>
-                    <label for="arrival">Arrival Time </label>
-                    <input id="arrival" type="datetime-local" name="time_date" placeholder="Arrival Time">
-                    <br><br>
-                    <label for="num">Number Of Travlers</label>
-                    <input id="num" type="number" name="no_travlers" min="1" max="15" value="1">
-                    <br><br>
-                    <label for="payment">Make Payment</label>
-                    <select id="payment" name="payment" >
-                        <option value="paypal"><a href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Fmyaccount%2Ftransfer&state=%2F"> paypal</a></option>
-                        <option value="cbe"><a href="https://www.combanketh.et/en/internet-banking/"> CBE</a></option>
-                        <option value="telebirr"><a href="https://www.ethiotelecom.et/telebirr/utility-bill-payment-telebirr/"> Telebirr</a></option>
-                    </select>
-                        <br><br>
-
-                    
-                       
-
-                    <p id="errorMessage" hidden></p> 
-
-                    <div class="form--button">
-
-                        <input class="form--buttons" type="reset" value="Reset" />
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <div class="holder m-4">
+                        <ul class="navbar-nav ms-auto ">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html"><b>HOME</b></a></li>
+                            
+                            <li class="nav-item"><a class="nav-link text-white" href="about.html"><b>ABOUT</b></a></li>
+                            
+                            <li class="nav-item"><a class="nav-link text-white" href="contact.html"><b>CONTACT</b></a></li>
+                            
+                            <li class="nav-item"><a class="nav-link text-white" href="places.html"><b>PLACES</b></a></li>
                         
-                        <input class="form--buttons" type="submit" value =Submit />
+                            <li class="nav-item"><a class="nav-link text-white" href="book.html"><b>BOOK</b></a></li>
+                            
+                            <li class="nav-item"><a class="nav-link text-white" href="special tours.html"><b>SPECIAL TOURS</b></a></li>
+                            
+                            <li class="nav-item"><a class="nav-link text-white" href="collection.html"><b>COLLECTION</b></a></li>
+                            
+                            <li class="nav-item text-white"><img class="bg-white" src="images/search icon.png" alt="search icon"  width="25" height="25"></li>
+                        </ul>
 
                     </div>
-                    <br>
-                        <p>The tickets will be send via your email</p>
+
+                </div>
+
+
+                
+                
+
+                
+            </nav>
+
+            <section class="background--special text-light p-5 text-center">
+                <div class="container text-start">
+                    
+
+                        <h1>BOOK</h1>
 
                     
-                </fieldset>
-            </form>
+                </div>
+            </section>
+
+        <!-- <div class="opacity-50%">
+            <img style="opacity: 0.8;" class="bg obj-fit-cover " src="images/background.jpg" alt="Background images- symbol of travelling" width="100%" height="100%">
+
+        </div> -->
+    </header>
+    
+    <div class="container align-items-center">
+        <div class="row d-flex flex-wrap">
+            <div class="col align-content-center d-flex ">
+                <br>
+                <div class="min-vh-15 align-middle">
+                    
+                    <div class="min-vh-5 container d-flex text-center mt-5 text-wrap flex-shrink-2">
+                        
+                        <p class="change" >If you want more information you can leave us a message in our contact page.</p>
+                        
+                    </div>
+
+                    <div class="min-vh-5 container d-flex text-center mt-5 text-wrap flex-sm-shrink-1">
+                        
+                        <p class="change">WE WILL ALWAYS BE THERE TO ANSWER YOUR QUESTION</p>
+                    
+
+                    </div>
+
+                    <div class="container min-vh-10">
+
+                        <ul class="list-unstyled mt-5 change">
+                            <li>CONTACT US 
+                                <div class="container mt-3">
+                                    <ul class="list-unstyled">
+                                        <li><img src="images/mail icon.png" alt="mail icon" width="25" height="25"><a href="mailto:sighttourguide@gmail.com" class="text-dark text-decoration-none"> sightTourGuide@gmail.com</a></li>
+                                        
+                                        <li><img class="mt-4 mb-5" src="images/phone icon.png" alt="phone icon" width="25" height="25"><a href="tel:+251960903751" class="text-dark text-decoration-none"> xxx-xx-xx-xx-xx</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <form  class="needs-validation pt-5" novalidate>
+                    <fieldset class="reset">
+                        <legend class="reset bg-dark text-white">PERSONAL INFORMATION</legend>
+                        <div class="form-group pt-5">
+                            <label for="fullname">Full Name</label>
+                            <input class="form-control" type="text" id="fullname" name="fullname" placeholder="John Smith Cowell" required>
+
+                        </div>
+                        
+                        <br><br>
+
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone</label>
+                            <input class="form-control" type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0956783456" required>
+                        </div>
+                        <br><br>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+
+                        </div>
+                        
+                            <br><br>
+
+                        <div class="form-group">
+                            <label class="form-label" for="residence">Place Of Residence</label>
+                            <select class="form-control form-select" id="residence" name="residence">
+                                <option value="addis ababa">Addis Ababa</option>
+                                <option value="jimma">Jimma</option>
+                                <option value="dire dawa">Dire dawa</option>
+                                <option value="london">London</option>
+                                <option value="bejing">Bejing</option>
+                                <option value="hawassa">Hawassa</option>
+                            </select>
+
+                        </div>
+                        <br><br>
+
+                        <div class="form-group">
+
+                            <label for="Tour">Tour Of Interest</label>
+                            <select class="form-control form-select" id="Tour" name="TourOfInterest" >
+                                <option value="london">London</option>
+                                <option value="bejing">Bejing</option>
+                                <option value="harar">Harar</option>
+                                <option value="dire dawa">Dire dawa</option>
+                                <option value="india">India</option>
+                            </select>
+
+                        </div>
+
+                        <br>
+
+                    </fieldset>
+
+                    <br><br>
+
+                    <fieldset class="reset">
+                        <legend class="reset bg-dark text-white">IMPORTANT INFORMATION</legend>
+                        <br>
+                        <label class="form-label" for="departure">Departure Time</label>
+                        <input class="form-control" id="departure" type="datetime-local" name="time_date" placeholder="Departure Time" required>
+
+                        <br><br>
+                        <label class="form-label" for="arrival">Arrival Time </label>
+                        <input class="form-control" id="arrival" type="datetime-local" name="time_date" placeholder="Arrival Time" required>
+                        <br><br>
+                        <label class="form-label" for="num">Number Of Travlers</label>
+                        <input class="form-control" id="num" type="number" name="no_travlers" min="1" max="15" value="1 " required>
+                        <br><br>
+                        <label class="form-label" for="payment">Make Payment</label>
+                        <select class="form-control form-select" id="payment" name="payment" >
+                            <option value="paypal"><a href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Fmyaccount%2Ftransfer&state=%2F"> paypal</a></option>
+                            <option value="cbe"><a href="https://www.combanketh.et/en/internet-banking/"> CBE</a></option>
+                            <option value="telebirr"><a href="https://www.ethiotelecom.et/telebirr/utility-bill-payment-telebirr/"> Telebirr</a></option>
+                        </select>
+                            <br><br>
+                            <input class="btn btn-dark" type="reset" value="Reset">
+                        <input class="btn btn-dark" type="submit" value =Submit>
+                        <p>The tickets will be send via your email</p>
+                        <br>
+                    </fieldset>
+                </form>
+
+            </div>
 
         </div>
 
-
     </div>
-
-        
     
-    <footer class="footer">
-        <div class="footer__left">
-                    <ul>
-                        <li><a href="about.html"><img src="images/Logo.png" alt="Logo of the company" width="25" height="25"></a></li>
-                        <h4>FOLLOW US ON</h4>
+    <br><br>
+    
+    <br><br>
 
-                        <div class="footer__socials">
+    
+    <footer class="bg-dark text-white">
+        <div class="container" style="padding-top:1rem;">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
 
-                            <li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook symbol" width="25" height="25"></a></li>
-                        
-                            <li><a href="https://www.tiktok.com/login"><img src="images/tiktok.png" alt="tiktok icon" width="25" height="25"></a></li>
-                            <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram icon" width="25" height="25"></a></li>
-                            <li><a href="https://chat.whatsapp.com/EROCVoIlPyt9yv8zs4Fxsq"><img src="images/whatsapp.png" alt="whatsapp icon" width="25" height="25"></a></li>
+                        <div class="col">
+                    
+                            <a href="about.html"><img src="images/Logo.png" alt="Logo of the company" width="25" height="25"></a>
+                            <p>FOLLOW US ON</p>
 
                         </div>
-            
-                    </ul>
+                    </div>
 
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://www.facebook.com/" ><img class="mb-2 rounded" src="images/facebook.png" alt="facebook symbol" width="25" height="25"></a>
+                        
+                            &nbsp;
+                            <a href="https://www.tiktok.com/login"><img class="mb-2 rounded" src="images/tiktok.png" alt="tiktok icon" width="25" height="25"></a>
+                        
+
+                            &nbsp;
+                            <a href="https://www.instagram.com/"><img class="mb-2 rounded" src="images/instagram.png" alt="Instagram icon" width="25" height="25"></a></li>
+                        
+                            &nbsp;
+                        
+                            <a href="https://chat.whatsapp.com/EROCVoIlPyt9yv8zs4Fxsq"><img class="mb-2 rounded" src="images/whatsapp.png" alt="whatsapp icon" width="25" height="25"></a>
+                        </div>
+
+                    </div>
+
+
+                    
                 </div>
 
-                <ul class="footer__right">
-                    <li>
-                        <h2>Quick Link</h2>
-
-                        <ul>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                            <li><a href="about.html#privacy"> PRIVACY POLICY</a></li>
-                            <li><a href="about.html#terms"> TERMS OF SERVICES</a></li>
-                        </ul>
-
-                    </li>
-
-                    <li>
-                        <h2>CONTACT US</h2>
-
-                        <ul class="box">
-                            <li> <img src="images/mail icon.png" alt="mail icon" width="25" height="25" class="contact-img">
-                                <a href="mailto:sighttourguide@gmail.com"> sightTourGuide@gmail.com</a></li>
-
-                                <li><img src="images/phone icon.png" alt="phone icon" width="25" height="25" class="contact-img">
+                <div class="col">
+                    <h2>Quick Link</h2>
                 
-                                    <a href="tel:+251960903751"> xxx-xx-xx-xx-xx</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white text-decoration-none">ABOUT</a></li>
+                        <li><a href="index.html" class="text-white text-decoration-none">HOME</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">CONTACT</a></li>
+                        <li><a href="about.html#privacy" class="text-white text-decoration-none"> PRIVACY POLICY</a></li>
+                        <li><a href="about.html#terms" class="text-white text-decoration-none"> TERMS OF SERVICES</a></li>
+                    </ul>
+                    
+                    
+                </div>
 
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li>
+                        <h2> CONTACT US </h2>
+                        <br>
+                        
+                        <ul class="list-unstyled">
 
+                                <li><img class="rounded" src="images/mail icon.png" alt="mail icon" width="25" height="25"><a href="mailto:sighttourguide@gmail.com" class="text-white text-decoration-none"> sightTourGuide@gmail.com</a></li>
+                                <br>
+
+                                <li><img class="rounded" src="images/phone icon.png" alt="phone icon" width="25" height="25"><a href="tel:+251960903751" class="text-white text-decoration-none"> xxx-xx-xx-xx-xx</a></li>
                             
                         </ul>
-
                     </li>
-
                 </ul>
-
-
-                <div class="footer__bottom">
-                    <hr> <br><br>
-                    <p>&copy; 2023 Sight Tour, All Right Reserved</p>
                 </div>
-                    
+            </div>
+            <hr class="bg-light">
 
-            
-        
-        
-        
+
+            <div class="row text-center">
+                
+                    <p><em>&copy; 2022 Sight Tour, All Right Reserved</em></p>
+            </div>
+
+        </div>
     </footer>
-
-<script type="text/javascript" defer src="js/script.js"></script>
-<script type="text/javascript" defer src="js/form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>(() => {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()</script>
+  <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
-
-
-
